@@ -1,4 +1,3 @@
-
 let result = [];
 
 module.exports = function towelSort (matrix) {
@@ -8,8 +7,11 @@ module.exports = function towelSort (matrix) {
       ? j
       : (matrix[i].length - j - 1) ;
       let arr = matrix[i][Idx];
-      result.push(arr);
+      result.push(arr); 
+      
     }
+    
   }
-  return result
+    return [result.join()]
 }
+
